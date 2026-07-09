@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section B - Comparative Analysis | NLP Repository</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="nav-brand" href="../index.html"><i class="fa-solid fa-brain"></i><span>NLP Repository</span></a>
+        <button class="hamburger" type="button" aria-label="Toggle navigation" onclick="toggleNav()"><span></span><span></span><span></span></button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="section_a.html">Section A</a></li>
+            <li><a class="active" href="section_b.html">Section B</a></li>
+            <li><a href="section_c.html">Section C</a></li>
+            <li><a href="section_d.html">Section D</a></li>
+            <li><a href="section_e.html">Section E</a></li>
+            <li><a href="section_f.html">Section F</a></li>
+            <li><a href="section_g.html">Section G</a></li>
+            <li><a href="section_h.html">Section H</a></li>
+            <li><a href="../index.html#sources">Sources</a></li>
+        </ul>
+    </nav>
+    <main class="page-shell">
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-top">
+                    <div>
+                        <div class="section-label"><i class="fa-solid fa-scale-balanced"></i> Section B</div>
+                        <h1>Comparative Analysis</h1>
+                        <p>Three focused comparisons that make the practical trade-offs in NLP easier to study and remember.</p>
+                    </div>
+                    <a class="back-link" href="../index.html">Return to overview</a>
+                </div>
+                <div class="tab-nav">
+                    <button class="tab-btn active" onclick="showTab('tab1', this)">Stemming vs Lemmatization</button>
+                    <button class="tab-btn" onclick="showTab('tab2', this)">TF vs TF-IDF</button>
+                    <button class="tab-btn" onclick="showTab('tab3', this)">Word2Vec vs FastText</button>
+                </div>
+                <div id="tab1" class="tab-panel active card">
+                    <div class="comparison-wrap">
+                        <table class="comparison-table">
+                            <thead><tr><th>Criteria</th><th>Stemming</th><th>Lemmatization</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Working</strong></td><td>Rule-based suffix stripping.</td><td>Vocabulary and morphology aware.</td></tr>
+                                <tr><td><strong>Speed</strong></td><td>Fast and lightweight.</td><td>Slower, but more accurate.</td></tr>
+                                <tr><td><strong>Output</strong></td><td>May produce non-words.</td><td>Produces valid dictionary words.</td></tr>
+                                <tr><td><strong>Best use</strong></td><td>Large-scale retrieval pipelines.</td><td>Semantic tasks and chatbots.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="tab2" class="tab-panel card">
+                    <div class="comparison-wrap">
+                        <table class="comparison-table">
+                            <thead><tr><th>Criteria</th><th>TF</th><th>TF-IDF</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Working</strong></td><td>Counts how often a term appears.</td><td>Balances frequency with rarity across documents.</td></tr>
+                                <tr><td><strong>Strength</strong></td><td>Simple and direct.</td><td>Better highlights informative words.</td></tr>
+                                <tr><td><strong>Weakness</strong></td><td>Common words can dominate.</td><td>Ignores deep semantics.</td></tr>
+                                <tr><td><strong>Use case</strong></td><td>Frequency baselines.</td><td>Search engines and classic ML features.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="tab3" class="tab-panel card">
+                    <div class="comparison-wrap">
+                        <table class="comparison-table">
+                            <thead><tr><th>Criteria</th><th>Word2Vec</th><th>FastText</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Representation</strong></td><td>One vector per word.</td><td>Combines word vectors with subword n-grams.</td></tr>
+                                <tr><td><strong>Rare words</strong></td><td>Harder to learn well.</td><td>Handles unseen forms more gracefully.</td></tr>
+                                <tr><td><strong>Semantic power</strong></td><td>Strong semantic structure.</td><td>Strong plus morphological robustness.</td></tr>
+                                <tr><td><strong>Use case</strong></td><td>General embeddings.</td><td>Low-resource and noisy language data.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <button id="scrollTop" class="scroll-top" type="button" aria-label="Scroll to top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="../js/script.js" defer></script>
+</body>
+</html>

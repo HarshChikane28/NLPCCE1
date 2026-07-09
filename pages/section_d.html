@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section D - Real-World Applications | NLP Repository</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="nav-brand" href="../index.html"><i class="fa-solid fa-brain"></i><span>NLP Repository</span></a>
+        <button class="hamburger" type="button" aria-label="Toggle navigation" onclick="toggleNav()"><span></span><span></span><span></span></button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="section_a.html">Section A</a></li>
+            <li><a href="section_b.html">Section B</a></li>
+            <li><a href="section_c.html">Section C</a></li>
+            <li><a class="active" href="section_d.html">Section D</a></li>
+            <li><a href="section_e.html">Section E</a></li>
+            <li><a href="section_f.html">Section F</a></li>
+            <li><a href="section_g.html">Section G</a></li>
+            <li><a href="section_h.html">Section H</a></li>
+            <li><a href="../index.html#sources">Sources</a></li>
+        </ul>
+    </nav>
+    <main class="page-shell">
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-top">
+                    <div>
+                        <div class="section-label"><i class="fa-solid fa-briefcase"></i> Section D</div>
+                        <h1>Real-World Applications</h1>
+                        <p>Practical examples showing how core NLP ideas show up in everyday products and services.</p>
+                    </div>
+                    <a class="back-link" href="../index.html">Return to overview</a>
+                </div>
+                <div class="section-grid app-grid">
+                    <article class="card">
+                        <div class="app-badge"><i class="fa-solid fa-robot"></i> Chatbots</div>
+                        <h3>Customer Support Assistants</h3>
+                        <p>Use tokenization, lemmatization, and embeddings to understand common service requests.</p>
+                    </article>
+                    <article class="card">
+                        <div class="app-badge"><i class="fa-solid fa-magnifying-glass"></i> Search</div>
+                        <h3>Search Engines</h3>
+                        <p>Depend on TF-IDF, stemming, and query normalization to retrieve relevant documents quickly.</p>
+                    </article>
+                    <article class="card">
+                        <div class="app-badge"><i class="fa-solid fa-chart-line"></i> Sentiment</div>
+                        <h3>Opinion Mining</h3>
+                        <p>Tracks reviews, social media posts, and feedback signals for brands and products.</p>
+                    </article>
+                    <article class="card">
+                        <div class="app-badge"><i class="fa-solid fa-language"></i> Translation</div>
+                        <h3>Machine Translation</h3>
+                        <p>Transforms text between languages using sequence modeling and attention-based architectures.</p>
+                    </article>
+                    <article class="card">
+                        <div class="app-badge"><i class="fa-solid fa-file-lines"></i> Summaries</div>
+                        <h3>Document Summarization</h3>
+                        <p>Condenses large documents for faster decision-making in education, law, and business workflows.</p>
+                    </article>
+                    <article class="card">
+                        <div class="app-badge"><i class="fa-solid fa-heart-pulse"></i> Healthcare</div>
+                        <h3>Clinical Text Mining</h3>
+                        <p>Extracts structured signals from unstructured notes to support doctors and health systems.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <button id="scrollTop" class="scroll-top" type="button" aria-label="Scroll to top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="../js/script.js" defer></script>
+</body>
+</html>

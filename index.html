@@ -1,477 +1,118 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Natural Language Processing - Knowledge Artifact Repository">
-    <title>NLP Knowledge Repository | SAKEC</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Natural Language Processing knowledge artifact repository">
+    <title>NLP Knowledge Artifact Repository | SAKEC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/common.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-brand">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-            NLP Repo
-        </div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#concepts">Concepts</a></li>
-            <li><a href="#comparisons">Comparisons</a></li>
-            <li><a href="#workflows">Workflows</a></li>
-            <li><a href="#applications">Applications</a></li>
-            <li><a href="#sustainability">Sustainability</a></li>
+        <a class="nav-brand" href="index.html"><i class="fa-solid fa-brain"></i><span>NLP Repository</span></a>
+        <button class="hamburger" type="button" aria-label="Toggle navigation" onclick="toggleNav()"><span></span><span></span><span></span></button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="pages/section_a.html">Section A</a></li>
+            <li><a href="pages/section_b.html">Section B</a></li>
+            <li><a href="pages/section_c.html">Section C</a></li>
+            <li><a href="pages/section_d.html">Section D</a></li>
+            <li><a href="pages/section_e.html">Section E</a></li>
+            <li><a href="pages/section_f.html">Section F</a></li>
+            <li><a href="pages/section_g.html">Section G</a></li>
+            <li><a href="pages/section_h.html">Section H</a></li>
+            <li><a href="#sources">Sources</a></li>
         </ul>
     </nav>
 
-    <main>
-        <!-- HERO SECTION -->
-        <header id="home" class="hero section">
-            <div class="hero-content">
-                <div class="badge">Continuous Comprehensive Evaluation Activity – I[cite: 1]</div>
-                <h1 class="typing-text">Natural Language Processing</h1>
+    <header class="hero">
+        <div class="container hero-grid">
+            <div class="hero-copy">
+                <div class="badge">Continuous Comprehensive Evaluation Activity - I</div>
+                <h1>Natural Language Processing</h1>
                 <h2>Knowledge Artifact Repository</h2>
-                <div class="academic-details">
-                    <p><strong>Institute:</strong> Shah & Anchor Kutchhi Engineering College[cite: 1]</p>
-                    <p><strong>Department:</strong> Computer Engineering</p>
-                    <p><strong>Course:</strong> Natural Language Processing (CMCORIPE301.1)[cite: 1]</p>
-                    <p><strong>Class:</strong> TY B. Tech, Semester V, A.Y. 2026-27[cite: 1]</p>
+                <p class="hero-lead">A structured academic website that organizes concepts, comparisons, workflows, applications, research, sustainability, contributions, and reflections into a clean multi-page repository.</p>
+                <div class="hero-meta">
+                    <div><strong>Institute:</strong> Shah & Anchor Kutchhi Engineering College</div>
+                    <div><strong>Department:</strong> Computer Engineering</div>
+                    <div><strong>Course:</strong> Natural Language Processing (CMCOR1PE301.1)</div>
+                    <div><strong>Class:</strong> TY B.Tech, Semester V, A.Y. 2026-27</div>
                 </div>
-                <a href="#concepts" class="btn-primary">Explore Repository</a>
-            </div>
-            <div class="hero-illustration">
-                <svg width="300" height="300" viewBox="0 0 100 100" class="animated-svg">
-                    <circle cx="50" cy="50" r="40" fill="none" stroke="var(--primary)" stroke-width="2" stroke-dasharray="5,5" class="spin"/>
-                    <circle cx="50" cy="50" r="25" fill="var(--secondary)" opacity="0.2"/>
-                    <path d="M30 50 Q 50 20 70 50 T 30 50" fill="none" stroke="var(--accent)" stroke-width="3" class="pulse-path"/>
-                    <text x="50" y="55" font-size="12" text-anchor="middle" fill="var(--text-main)" font-weight="bold">NLP</text>
-                </svg>
-            </div>
-        </header>
-
-        <!-- TEAM SECTION -->
-        <section id="team" class="section">
-            <h2 class="section-title">Knowledge Engineering Team</h2>
-            <p class="section-subtitle">Collaborators fulfilling the individual contribution requirements[cite: 1].</p>
-            <div class="card-grid team-grid">
-                <div class="card team-card">
-                    <div class="avatar">HC</div>
-                    <h3>Harsh Chikane</h3>
-                    <p class="roll">Roll No: 13</p>
-                    <div class="roles">
-                        <span class="tag">Repository Designer</span>
-                        <span class="tag">Research</span>
-                        <span class="tag">Documentation</span>
-                        <span class="tag">Frontend Development</span>
-                    </div>
-                </div>
-                <div class="card team-card">
-                    <div class="avatar">AG</div>
-                    <h3>Abhishek Gupta</h3>
-                    <p class="roll">Roll No: <em>To be Updated</em></p>
-                    <div class="roles">
-                        <span class="tag">Research</span>
-                        <span class="tag">Content Validation</span>
-                        <span class="tag">Workflow Design</span>
-                    </div>
+                <div class="hero-actions">
+                    <a class="btn-primary" href="#dashboard">Explore Structure</a>
+                    <a class="btn-secondary" href="pages/section_a.html">Open Section A</a>
                 </div>
             </div>
-        </section>
-
-        <!-- INTRODUCTION SECTION -->
-        <section id="intro" class="section">
-            <h2 class="section-title">Introduction to NLP</h2>
-            <div class="intro-grid">
-                <div class="intro-text">
-                    <p><strong>Natural Language Processing (NLP)</strong> involves multiple preprocessing, representation, and feature engineering techniques that transform raw text into machine-understandable formats[cite: 1].</p>
-                    <ul>
-                        <li><strong>Preprocessing:</strong> Cleans raw text using techniques like tokenization and stop-word removal[cite: 1].</li>
-                        <li><strong>Feature Engineering:</strong> Extracts numerical features using models like TF-IDF[cite: 1].</li>
-                        <li><strong>Language Representation:</strong> Maps words to vectors (Word Embeddings) to capture semantics[cite: 1].</li>
-                        <li><strong>Language Models:</strong> Predict sequences and generate text using Statistical or Neural approaches[cite: 1].</li>
-                    </ul>
-                </div>
-                <div class="intro-illustration">
-                    <svg viewBox="0 0 200 120" width="100%" height="100%">
-                        <rect x="10" y="40" width="40" height="30" rx="5" fill="var(--primary)" opacity="0.8"/>
-                        <text x="30" y="58" font-size="8" fill="#fff" text-anchor="middle">Text</text>
-                        <line x1="50" y1="55" x2="80" y2="55" stroke="var(--text-main)" stroke-width="2" marker-end="url(#arrow)"/>
-                        <rect x="80" y="40" width="40" height="30" rx="5" fill="var(--secondary)" opacity="0.8"/>
-                        <text x="100" y="58" font-size="8" fill="#fff" text-anchor="middle">NLP Engine</text>
-                        <line x1="120" y1="55" x2="150" y2="55" stroke="var(--text-main)" stroke-width="2" marker-end="url(#arrow)"/>
-                        <rect x="150" y="40" width="40" height="30" rx="5" fill="var(--accent)" opacity="0.8"/>
-                        <text x="170" y="58" font-size="8" fill="#fff" text-anchor="middle">Insight</text>
-                        <defs>
-                            <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
-                                <path d="M0,0 L0,6 L9,3 z" fill="var(--text-main)" />
-                            </marker>
-                        </defs>
-                    </svg>
+            <div class="hero-visual">
+                <div class="orbital-card">
+                    <div class="orbital-ring"></div>
+                    <div class="orbital-core"><i class="fa-solid fa-comment-dots"></i><span>NLP</span></div>
+                    <span class="orbital-item item-1">Tokenization</span>
+                    <span class="orbital-item item-2">TF-IDF</span>
+                    <span class="orbital-item item-3">Word2Vec</span>
+                    <span class="orbital-item item-4">Transformers</span>
                 </div>
             </div>
-        </section>
+        </div>
+    </header>
 
-        <!-- SECTION A: CONCEPT CARDS -->
-        <section id="concepts" class="section bg-alt">
-            <h2 class="section-title">Section A: Concept Cards</h2>
-            <p class="section-subtitle">Structured artifacts explaining text preprocessing, vectorization, feature engineering, and language representation[cite: 1].</p>
-            <p class="section-note">Each concept card is grouped visually for quick revision without requiring search or filter scripts.</p>
+    <section class="course-strip">
+        <div class="container course-grid">
+            <article class="stat-card"><i class="fa-solid fa-book-open"></i><div><span>Course Code</span><strong>CMCOR1PE301.1</strong></div></article>
+            <article class="stat-card"><i class="fa-solid fa-calendar-days"></i><div><span>Academic Year</span><strong>2026-27</strong></div></article>
+            <article class="stat-card"><i class="fa-solid fa-layer-group"></i><div><span>Semester</span><strong>V</strong></div></article>
+            <article class="stat-card"><i class="fa-solid fa-graduation-cap"></i><div><span>Program</span><strong>TY B.Tech</strong></div></article>
+        </div>
+    </section>
 
-            <div class="card-grid" id="concept-grid">
-                <!-- Card 1: Tokenization -->
-                <article class="card concept-card" data-category="preprocessing">
-                    <div class="card-header">
-                        <svg class="concept-icon" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h7"/></svg>
-                        <h3>Tokenization</h3>
-                    </div>
-                    <p><strong>Definition:</strong> The process of breaking raw text into smaller units called tokens (words, subwords, or sentences).</p>
-                    <p><strong>Purpose:</strong> To prepare text for vectorization by creating a structured vocabulary[cite: 1].</p>
-                    <p><strong>Working:</strong> Uses whitespace, punctuation, or statistical models to split strings.</p>
-                    <div class="code-block">
-                        <pre><code>from nltk.tokenize import word_tokenize
-text = "NLP is amazing!"
-print(word_tokenize(text)) 
-# ['NLP', 'is', 'amazing', '!']</code></pre>
-                    </div>
-                    <div class="card-meta">
-                        <p><strong>Pros:</strong> Fundamental step, reduces complexity.</p>
-                        <p><strong>Cons:</strong> Can struggle with complex morphology.</p>
-                        <p><strong>App:</strong> Required in almost all NLP tasks.</p>
-                    </div>
-                </article>
-
-                <!-- Card 2: Lemmatization -->
-                <article class="card concept-card" data-category="preprocessing">
-                    <div class="card-header">
-                        <svg class="concept-icon" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2"><path d="M12 20v-8m0 0V4m0 8h8m-8 0H4"/></svg>
-                        <h3>Lemmatization</h3>
-                    </div>
-                    <p><strong>Definition:</strong> Reducing a word to its base dictionary form (lemma) using vocabulary and morphological analysis.</p>
-                    <p><strong>Purpose:</strong> Standardize words while preserving context[cite: 1].</p>
-                    <p><strong>Working:</strong> Uses POS tags and lexical databases (like WordNet) to find the root.</p>
-                    <div class="code-block">
-                        <pre><code>from nltk.stem import WordNetLemmatizer
-lemmatizer = WordNetLemmatizer()
-print(lemmatizer.lemmatize("better", pos="a")) 
-# 'good'</code></pre>
-                    </div>
-                    <div class="card-meta">
-                        <p><strong>Pros:</strong> High accuracy, real words output.</p>
-                        <p><strong>Cons:</strong> Slower than stemming.</p>
-                        <p><strong>App:</strong> Search engines, Chatbots.</p>
-                    </div>
-                </article>
-
-                <!-- Card 3: TF-IDF -->
-                <article class="card concept-card" data-category="feature">
-                    <div class="card-header">
-                        <svg class="concept-icon" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
-                        <h3>TF-IDF</h3>
-                    </div>
-                    <p><strong>Definition:</strong> Term Frequency-Inverse Document Frequency evaluates how relevant a word is to a document in a collection.</p>
-                    <p><strong>Purpose:</strong> To vectorize text while weighing down frequent, uninformative words[cite: 1].</p>
-                    <p><strong>Working:</strong> Multiplies term frequency (TF) by inverse document frequency (IDF).</p>
-                    <div class="code-block">
-                        <pre><code>from sklearn.feature_extraction.text import TfidfVectorizer
-tfidf = TfidfVectorizer()
-vectors = tfidf.fit_transform(["I love NLP"])</code></pre>
-                    </div>
-                    <div class="card-meta">
-                        <p><strong>Pros:</strong> Easy to compute, penalizes stop words.</p>
-                        <p><strong>Cons:</strong> No semantic understanding.</p>
-                        <p><strong>App:</strong> Information Retrieval.</p>
-                    </div>
-                </article>
-
-                <!-- Card 4: Word Embeddings -->
-                <article class="card concept-card" data-category="representation">
-                    <div class="card-header">
-                        <svg class="concept-icon" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                        <h3>Word Embeddings (Word2Vec)</h3>
-                    </div>
-                    <p><strong>Definition:</strong> Dense vector representations of words where similar words have similar vectors.</p>
-                    <p><strong>Purpose:</strong> Capture semantic meanings and relationships[cite: 1].</p>
-                    <p><strong>Working:</strong> Trains a shallow neural network (CBOW or Skip-gram) to predict context words.</p>
-                    <div class="code-block">
-                        <pre><code>from gensim.models import Word2Vec
-model = Word2Vec(sentences, vector_size=100)
-vector = model.wv['machine']</code></pre>
-                    </div>
-                    <div class="card-meta">
-                        <p><strong>Pros:</strong> Captures context, dense vectors.</p>
-                        <p><strong>Cons:</strong> Static (same word, same vector).</p>
-                        <p><strong>App:</strong> Sentiment Analysis, Translation.</p>
-                    </div>
-                </article>
-
-                <!-- Card 5: Transformer Models -->
-                <article class="card concept-card" data-category="models">
-                    <div class="card-header">
-                        <svg class="concept-icon" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
-                        <h3>Transformer-based Models</h3>
-                    </div>
-                    <p><strong>Definition:</strong> Architecture relying on self-attention mechanisms to process entire sequences in parallel.</p>
-                    <p><strong>Purpose:</strong> High-accuracy, context-aware sequence modeling[cite: 1].</p>
-                    <p><strong>Working:</strong> Uses attention scores to weigh the importance of every word relative to others.</p>
-                    <div class="code-block">
-                        <pre><code>from transformers import pipeline
-classifier = pipeline("sentiment-analysis")
-print(classifier("Transformers are great!"))</code></pre>
-                    </div>
-                    <div class="card-meta">
-                        <p><strong>Pros:</strong> State-of-the-art accuracy, parallelizable.</p>
-                        <p><strong>Cons:</strong> Computationally expensive.</p>
-                        <p><strong>App:</strong> LLMs, BERT, GPT applications.</p>
-                    </div>
-                </article>
+    <section id="dashboard" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Repository Hub</div>
+                <h2 class="section-title">Knowledge Architecture</h2>
+                <p class="section-desc">The repository is split into clear sections so each topic can be studied independently while still feeling part of one academic system.</p>
             </div>
-        </section>
-
-        <!-- SECTION B: COMPARATIVE ANALYSIS -->
-        <section id="comparisons" class="section">
-            <h2 class="section-title">Section B: Comparative Analysis</h2>
-            <p class="section-subtitle">Evaluating NLP techniques side-by-side[cite: 1].</p>
-
-            <div class="accordion">
-                <!-- Comparison 1 -->
-                <details class="accordion-item" open>
-                    <summary class="accordion-header">Stemming vs Lemmatization</summary>
-                    <div class="accordion-content">
-                        <div class="table-responsive">
-                            <table class="comparison-table">
-                                <thead>
-                                    <tr>
-                                        <th>Feature</th>
-                                        <th>Stemming</th>
-                                        <th>Lemmatization</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><strong>Working Mechanism</strong></td>
-                                        <td>Chops off word suffixes heuristically.</td>
-                                        <td>Uses vocabulary & morphological analysis.</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Computational Complexity</strong></td>
-                                        <td>Low (Fast)</td>
-                                        <td>High (Slower, needs dictionaries)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Strengths</strong></td>
-                                        <td>Speed, simplicity.</td>
-                                        <td>Accuracy, returns valid words.</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Weaknesses</strong></td>
-                                        <td>Produces non-words (e.g., "studying" -> "studi").</td>
-                                        <td>Requires POS tagging to be accurate.</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Applications</strong></td>
-                                        <td>Spam detection, large text processing.</td>
-                                        <td>Chatbots, Question Answering.</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </details>
-
-                <!-- Comparison 2 -->
-                <details class="accordion-item">
-                    <summary class="accordion-header">Statistical vs Neural Language Models</summary>
-                    <div class="accordion-content">
-                        <div class="table-responsive">
-                            <table class="comparison-table">
-                                <thead>
-                                    <tr>
-                                        <th>Feature</th>
-                                        <th>Statistical LMs (e.g., N-grams)</th>
-                                        <th>Neural LMs (e.g., Transformers)</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><strong>Working Mechanism</strong></td>
-                                        <td>Calculates probability based on frequency counts.</td>
-                                        <td>Uses neural networks to learn distributed representations.</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Memory Usage</strong></td>
-                                        <td>High (grows exponentially with N).</td>
-                                        <td>Fixed size parameters, though large models need GPUs.</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Strengths</strong></td>
-                                        <td>Simple to implement, interpretable.</td>
-                                        <td>Generalizes well to unseen data, captures long contexts.</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Weaknesses</strong></td>
-                                        <td>Data sparsity, limited context window.</td>
-                                        <td>"Black box", extremely resource-intensive.</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </details>
+            <div class="dashboard-grid">
+                <a class="dashboard-card" href="pages/section_a.html"><span class="dashboard-icon"><i class="fa-solid fa-cards-blank"></i></span><h3>Section A</h3><p>Concept cards for preprocessing, vectorization, embeddings, and language models.</p></a>
+                <a class="dashboard-card" href="pages/section_b.html"><span class="dashboard-icon"><i class="fa-solid fa-scale-balanced"></i></span><h3>Section B</h3><p>Side-by-side comparisons highlighting working mechanisms and trade-offs.</p></a>
+                <a class="dashboard-card" href="pages/section_c.html"><span class="dashboard-icon"><i class="fa-solid fa-diagram-project"></i></span><h3>Section C</h3><p>Workflow diagrams for preprocessing, feature engineering, and language modeling.</p></a>
+                <a class="dashboard-card" href="pages/section_d.html"><span class="dashboard-icon"><i class="fa-solid fa-briefcase"></i></span><h3>Section D</h3><p>Real-world applications mapped back to the NLP concepts they use.</p></a>
+                <a class="dashboard-card" href="pages/section_e.html"><span class="dashboard-icon"><i class="fa-solid fa-flask"></i></span><h3>Section E</h3><p>Research and industry insights covering modern tools, papers, and frameworks.</p></a>
+                <a class="dashboard-card" href="pages/section_f.html"><span class="dashboard-icon"><i class="fa-solid fa-leaf"></i></span><h3>Section F</h3><p>Sustainability and societal impact, including SDG alignment and accessibility.</p></a>
+                <a class="dashboard-card" href="pages/section_g.html"><span class="dashboard-icon"><i class="fa-solid fa-users"></i></span><h3>Section G</h3><p>Contribution matrix documenting the division of work across the team.</p></a>
+                <a class="dashboard-card" href="pages/section_h.html"><span class="dashboard-icon"><i class="fa-solid fa-pen-fancy"></i></span><h3>Section H</h3><p>Reflection notes summarizing learning outcomes and individual takeaways.</p></a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- SECTION C: WORKFLOW DIAGRAMS -->
-        <section id="workflows" class="section bg-alt">
-            <h2 class="section-title">Section C: Workflow Diagrams</h2>
-            <p class="section-subtitle">Visual workflow diagrams explaining the pipelines[cite: 1].</p>
-
-            <div class="workflow-container">
-                <h3>1. Complete Text Preprocessing Pipeline</h3>
-                <div class="svg-workflow">
-                    <svg viewBox="0 0 800 100" width="100%" preserveAspectRatio="xMidYMid meet">
-                        <!-- Boxes -->
-                        <rect x="10" y="25" width="100" height="50" rx="5" fill="var(--primary)"/>
-                        <text x="60" y="55" class="svg-text">Raw Text</text>
-                        
-                        <rect x="160" y="25" width="120" height="50" rx="5" fill="var(--secondary)"/>
-                        <text x="220" y="55" class="svg-text">Tokenization</text>
-
-                        <rect x="330" y="25" width="120" height="50" rx="5" fill="var(--secondary)"/>
-                        <text x="390" y="55" class="svg-text">Stopwords</text>
-
-                        <rect x="500" y="25" width="120" height="50" rx="5" fill="var(--secondary)"/>
-                        <text x="560" y="55" class="svg-text">Lemmatization</text>
-
-                        <rect x="670" y="25" width="100" height="50" rx="5" fill="var(--accent)"/>
-                        <text x="720" y="55" class="svg-text">Clean Text</text>
-
-                        <!-- Arrows -->
-                        <path d="M110 50 L150 50" class="animated-arrow" marker-end="url(#arrowhead)"/>
-                        <path d="M280 50 L320 50" class="animated-arrow" marker-end="url(#arrowhead)"/>
-                        <path d="M450 50 L490 50" class="animated-arrow" marker-end="url(#arrowhead)"/>
-                        <path d="M620 50 L660 50" class="animated-arrow" marker-end="url(#arrowhead)"/>
-
-                        <defs>
-                            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                                <polygon points="0 0, 10 3.5, 0 7" fill="var(--text-main)"/>
-                            </marker>
-                        </defs>
-                    </svg>
-                </div>
-
-                <h3>2. Feature Engineering Pipeline (TF-IDF)</h3>
-                <div class="svg-workflow mt-4">
-                    <svg viewBox="0 0 800 100" width="100%" preserveAspectRatio="xMidYMid meet">
-                        <rect x="10" y="25" width="120" height="50" rx="5" fill="var(--primary)"/>
-                        <text x="70" y="55" class="svg-text">Clean Text</text>
-                        
-                        <rect x="180" y="25" width="120" height="50" rx="5" fill="var(--secondary)"/>
-                        <text x="240" y="55" class="svg-text">Bag of Words</text>
-
-                        <rect x="350" y="25" width="80" height="50" rx="5" fill="var(--secondary)"/>
-                        <text x="390" y="55" class="svg-text">TF / IDF</text>
-
-                        <rect x="480" y="25" width="120" height="50" rx="5" fill="var(--secondary)"/>
-                        <text x="540" y="55" class="svg-text">TF-IDF Matrix</text>
-
-                        <rect x="650" y="25" width="120" height="50" rx="5" fill="var(--accent)"/>
-                        <text x="710" y="55" class="svg-text">Feature Vector</text>
-
-                        <path d="M130 50 L170 50" class="animated-arrow" marker-end="url(#arrowhead)"/>
-                        <path d="M300 50 L340 50" class="animated-arrow" marker-end="url(#arrowhead)"/>
-                        <path d="M430 50 L470 50" class="animated-arrow" marker-end="url(#arrowhead)"/>
-                        <path d="M600 50 L640 50" class="animated-arrow" marker-end="url(#arrowhead)"/>
-                    </svg>
-                </div>
+    <section id="sources" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">References</div>
+                <h2 class="section-title">Academic & Technical Sources</h2>
+                <p class="section-desc">The page structure is inspired by a formal knowledge repository layout and is supported by standard NLP references.</p>
             </div>
-        </section>
-
-        <!-- SECTION D: REAL WORLD APPLICATIONS -->
-        <section id="applications" class="section">
-            <h2 class="section-title">Section D: Real-World Applications</h2>
-            <p class="section-subtitle">How NLP week 1 concepts translate to real-world software[cite: 1].</p>
-            
-            <div class="card-grid">
-                <div class="card app-card">
-                    <div class="app-icon">🤖</div>
-                    <h3>Intelligent Chatbots</h3>
-                    <p><strong>Problem:</strong> Automating customer support routing and basic queries.</p>
-                    <p><strong>Concepts Used:</strong> Tokenization, Lemmatization, Word Embeddings[cite: 1].</p>
-                    <p><strong>Benefits:</strong> 24/7 availability, reduced human load.</p>
-                </div>
-                <div class="card app-card">
-                    <div class="app-icon">🔍</div>
-                    <h3>Search Engines</h3>
-                    <p><strong>Problem:</strong> Finding relevant documents from billions of web pages.</p>
-                    <p><strong>Concepts Used:</strong> TF-IDF, Stemming, Stop-word removal[cite: 1].</p>
-                    <p><strong>Benefits:</strong> Fast retrieval, semantic matching.</p>
-                </div>
-                <div class="card app-card">
-                    <div class="app-icon">📈</div>
-                    <h3>Sentiment Analysis</h3>
-                    <p><strong>Problem:</strong> Understanding public opinion on products or stocks.</p>
-                    <p><strong>Concepts Used:</strong> N-Grams, Bag of Words, Neural LMs[cite: 1].</p>
-                    <p><strong>Benefits:</strong> Automated brand monitoring and financial predictions.</p>
-                </div>
+            <div class="source-list card">
+                <div class="source-item"><strong>Speech and Language Processing</strong><span>Jurafsky and Martin, core reference for preprocessing, language models, and embeddings.</span></div>
+                <div class="source-item"><strong>Attention Is All You Need</strong><span>Foundational Transformer paper that motivates modern sequence modeling.</span></div>
+                <div class="source-item"><strong>Efficient Estimation of Word Representations in Vector Space</strong><span>Mikolov et al. for Word2Vec style semantic vector learning.</span></div>
+                <div class="source-item"><strong>Hugging Face Documentation</strong><span>Practical reference for transformer pipelines, inference, and model usage.</span></div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- SECTION E: SUSTAINABILITY & IMPACT -->
-        <section id="sustainability" class="section bg-alt">
-            <h2 class="section-title">Sustainability and Societal Impact</h2>
-            <div class="content-box">
-                <p>Natural Language Processing (NLP) stands at the forefront of digital inclusion, significantly contributing to the United Nations Sustainable Development Goals (SDGs), particularly in ensuring equitable education, health awareness, and reducing inequalities[cite: 1]. By bridging communication gaps, NLP fosters a more inclusive society.</p>
-
-                <p><strong>Language Accessibility and Regional Technologies:</strong> In diverse nations like India, language barriers often hinder access to essential information. NLP powers regional language technologies and machine translation models, ensuring non-English speakers can access digital content, banking, and government services. This promotes digital democracy and economic participation[cite: 1].</p>
-
-                <p><strong>Educational Inclusion:</strong> NLP enhances education through automated tutoring systems, grammar checkers, and text summarization tools[cite: 1]. These intelligent systems assist students with learning disabilities (Assistive Technologies) by converting speech-to-text and text-to-speech, ensuring personalized and accessible learning environments for all demographics[cite: 1].</p>
-
-                <p><strong>Healthcare and Citizen Services:</strong> In healthcare, NLP models extract critical patient data from unstructured electronic health records, assisting doctors in rapid diagnosis. For citizen services, multilingual chatbots deploy life-saving information and streamline public service inquiries, removing bureaucratic friction[cite: 1].</p>
-
-                <p>Ultimately, sustainable development requires technology to serve humanity equitably. As NLP models grow, optimizing their computational efficiency (Green AI) ensures these societal benefits do not come at an untenable environmental cost, making smart communication truly sustainable.</p>
-            </div>
-        </section>
-
-        <!-- REFLECTION SECTION -->
-        <section id="reflection" class="section">
-            <h2 class="section-title">Reflection Notes</h2>
-            <div class="card-grid">
-                <div class="card reflection-card">
-                    <h3>Reflection by Harsh Chikane</h3>
-                    <p>Developing this artifact repository solidified my understanding of text preprocessing pipelines. Structuring the UI/UX alongside coding the underlying NLP feature engineering concepts reinforced the importance of clear data representation. Integrating theory with front-end design highlighted how technical communication is just as vital as code execution.</p>
-                </div>
-                <div class="card reflection-card">
-                    <h3>Reflection by Abhishek Gupta</h3>
-                    <p>Focusing on content validation and workflow design allowed me to deeply analyze the differences between traditional statistical models and neural embeddings. Organizing the comparative analyses taught me how computational complexity limits certain approaches in production, emphasizing the need for efficient feature engineering in modern NLP.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- INTERACTIVE QUIZ (EXTRA) -->
-        <section class="section">
-            <h2 class="section-title">Test Your Knowledge</h2>
-            <div class="quiz-container card">
-                <p>Which technique reduces a word to its dictionary root while preserving its context?</p>
-                <div class="quiz-options static-options">
-                    <p>A. Stemming</p>
-                    <p>B. Lemmatization</p>
-                    <p>C. Tokenization</p>
-                </div>
-                <details class="quiz-answer mt-2">
-                    <summary class="btn-primary">Show Answer</summary>
-                    <p class="mt-2"><strong>Correct answer:</strong> Lemmatization, because it reduces a word to a valid base form while preserving contextual meaning.</p>
-                </details>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <p>Developed for the SAKEC NLP Evaluation Assignment[cite: 1].</p>
-            <p>References: NLTK Documentation | Hugging Face | Speech & Language Processing (Jurafsky & Martin)</p>
-            <a href="#home" class="btn-primary">Back to Top</a>
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div><strong>NLP Repository</strong><p>SAKEC Continuous Comprehensive Evaluation Activity - I</p></div>
+            <a class="btn-secondary" href="#dashboard">Back to Top</a>
         </div>
     </footer>
+
+    <button id="scrollTop" class="scroll-top" type="button" aria-label="Scroll to top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

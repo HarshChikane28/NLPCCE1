@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section A - Concept Cards | NLP Repository</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="nav-brand" href="../index.html"><i class="fa-solid fa-brain"></i><span>NLP Repository</span></a>
+        <button class="hamburger" type="button" aria-label="Toggle navigation" onclick="toggleNav()"><span></span><span></span><span></span></button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a class="active" href="section_a.html">Section A</a></li>
+            <li><a href="section_b.html">Section B</a></li>
+            <li><a href="section_c.html">Section C</a></li>
+            <li><a href="section_d.html">Section D</a></li>
+            <li><a href="section_e.html">Section E</a></li>
+            <li><a href="section_f.html">Section F</a></li>
+            <li><a href="section_g.html">Section G</a></li>
+            <li><a href="section_h.html">Section H</a></li>
+            <li><a href="../index.html#sources">Sources</a></li>
+        </ul>
+    </nav>
+    <main class="page-shell">
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-top">
+                    <div>
+                        <div class="section-label"><i class="fa-solid fa-cards-blank"></i> Section A</div>
+                        <h1>Concept Cards</h1>
+                        <p>Core NLP ideas presented as compact reference cards so the learning path stays structured and easy to revise.</p>
+                    </div>
+                    <a class="back-link" href="../index.html">Return to overview</a>
+                </div>
+                <div class="section-grid concept-grid">
+                    <article class="card">
+                        <h3>Sentence Segmentation</h3>
+                        <p>Separates a document into sentences before deeper text processing begins.</p>
+                        <div class="meta"><span class="pill">Preprocessing</span><span class="pill">Boundary detection</span></div>
+                        <div class="code-block">"Dr. Smith arrived. He spoke."</div>
+                    </article>
+                    <article class="card">
+                        <h3>Tokenization</h3>
+                        <p>Breaks text into words, subwords, or symbols to prepare a vocabulary for modeling.</p>
+                        <div class="meta"><span class="pill">Preprocessing</span><span class="pill">Vocabulary</span></div>
+                        <div class="code-block">["NLP", "is", "fun"]</div>
+                    </article>
+                    <article class="card">
+                        <h3>Stop-word Removal</h3>
+                        <p>Removes frequent function words that add little meaning in retrieval tasks.</p>
+                        <div class="meta"><span class="pill">Filtering</span><span class="pill">Noise reduction</span></div>
+                        <div class="code-block">the, is, and, of</div>
+                    </article>
+                    <article class="card">
+                        <h3>Lemmatization</h3>
+                        <p>Converts a word to a valid dictionary form while preserving meaning and context.</p>
+                        <div class="meta"><span class="pill">Normalization</span><span class="pill">WordNet</span></div>
+                        <div class="code-block">better -&gt; good</div>
+                    </article>
+                    <article class="card">
+                        <h3>TF and TF-IDF</h3>
+                        <p>Weights terms by frequency and document rarity for search and feature engineering.</p>
+                        <div class="meta"><span class="pill">Feature engineering</span><span class="pill">Vectorization</span></div>
+                        <div class="code-block">term_frequency * inverse_document_frequency</div>
+                    </article>
+                    <article class="card">
+                        <h3>Word2Vec</h3>
+                        <p>Learns dense word vectors where semantically similar words sit close together.</p>
+                        <div class="meta"><span class="pill">Embeddings</span><span class="pill">Semantics</span></div>
+                        <div class="code-block">model.wv["machine"]</div>
+                    </article>
+                    <article class="card">
+                        <h3>FastText</h3>
+                        <p>Extends embeddings with subword information to handle rare and misspelled words better.</p>
+                        <div class="meta"><span class="pill">Embeddings</span><span class="pill">Subwords</span></div>
+                        <div class="code-block">word = subword_ngrams(word)</div>
+                    </article>
+                    <article class="card">
+                        <h3>Transformers</h3>
+                        <p>Uses self-attention to process long context efficiently in modern language models.</p>
+                        <div class="meta"><span class="pill">Models</span><span class="pill">Attention</span></div>
+                        <div class="code-block">attention(query, key, value)</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <button id="scrollTop" class="scroll-top" type="button" aria-label="Scroll to top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="../js/script.js" defer></script>
+</body>
+</html>

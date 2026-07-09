@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section G - Contribution Matrix | NLP Repository</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="nav-brand" href="../index.html"><i class="fa-solid fa-brain"></i><span>NLP Repository</span></a>
+        <button class="hamburger" type="button" aria-label="Toggle navigation" onclick="toggleNav()"><span></span><span></span><span></span></button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="section_a.html">Section A</a></li>
+            <li><a href="section_b.html">Section B</a></li>
+            <li><a href="section_c.html">Section C</a></li>
+            <li><a href="section_d.html">Section D</a></li>
+            <li><a href="section_e.html">Section E</a></li>
+            <li><a href="section_f.html">Section F</a></li>
+            <li><a class="active" href="section_g.html">Section G</a></li>
+            <li><a href="section_h.html">Section H</a></li>
+            <li><a href="../index.html#sources">Sources</a></li>
+        </ul>
+    </nav>
+    <main class="page-shell">
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-top">
+                    <div>
+                        <div class="section-label"><i class="fa-solid fa-users"></i> Section G</div>
+                        <h1>Individual Contribution Matrix</h1>
+                        <p>A transparent breakdown of how the work is divided across the repository sections.</p>
+                    </div>
+                    <a class="back-link" href="../index.html">Return to overview</a>
+                </div>
+                <div class="card">
+                    <div class="comparison-wrap">
+                        <table class="matrix-table">
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Harsh Chikane</th>
+                                    <th>Abhishek Gupta</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td><strong>Role</strong></td><td>Repository design, frontend structure, documentation</td><td>Content review, workflow design, validation</td></tr>
+                                <tr><td><strong>Concept Cards</strong></td><td>Tokenization, TF-IDF, Word2Vec, Transformers</td><td>Sentence segmentation, stop-word removal, lemmatization</td></tr>
+                                <tr><td><strong>Comparisons</strong></td><td>TF vs TF-IDF, Word2Vec vs FastText</td><td>Stemming vs Lemmatization</td></tr>
+                                <tr><td><strong>Workflows</strong></td><td>Pipeline presentation and visual structure</td><td>Feature engineering flow and model flow</td></tr>
+                                <tr><td><strong>Sustainability</strong></td><td>Education and accessibility focus</td><td>Healthcare and public-service focus</td></tr>
+                                <tr><td><strong>Share</strong></td><td>50%</td><td>50%</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <button id="scrollTop" class="scroll-top" type="button" aria-label="Scroll to top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="../js/script.js" defer></script>
+</body>
+</html>

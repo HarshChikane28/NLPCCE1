@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section E - Research & Industry Insights | NLP Repository</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="nav-brand" href="../index.html"><i class="fa-solid fa-brain"></i><span>NLP Repository</span></a>
+        <button class="hamburger" type="button" aria-label="Toggle navigation" onclick="toggleNav()"><span></span><span></span><span></span></button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="section_a.html">Section A</a></li>
+            <li><a href="section_b.html">Section B</a></li>
+            <li><a href="section_c.html">Section C</a></li>
+            <li><a href="section_d.html">Section D</a></li>
+            <li><a class="active" href="section_e.html">Section E</a></li>
+            <li><a href="section_f.html">Section F</a></li>
+            <li><a href="section_g.html">Section G</a></li>
+            <li><a href="section_h.html">Section H</a></li>
+            <li><a href="../index.html#sources">Sources</a></li>
+        </ul>
+    </nav>
+    <main class="page-shell">
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-top">
+                    <div>
+                        <div class="section-label"><i class="fa-solid fa-flask"></i> Section E</div>
+                        <h1>Research & Industry Insights</h1>
+                        <p>Modern NLP directions, practical tools, and active industry use cases summarized in a compact format.</p>
+                    </div>
+                    <a class="back-link" href="../index.html">Return to overview</a>
+                </div>
+                <div class="section-grid app-grid">
+                    <article class="card">
+                        <h3>Hugging Face Transformers</h3>
+                        <p>Standardizes model loading, inference, and fine-tuning across the transformer ecosystem.</p>
+                    </article>
+                    <article class="card">
+                        <h3>LangChain</h3>
+                        <p>Helps build pipelines that connect models, tools, and retrieval systems.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Retrieval-Augmented Generation</h3>
+                        <p>Combines search and generation so responses can stay grounded in external knowledge.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Agentic AI</h3>
+                        <p>Focuses on systems that can plan, act, and iterate across multiple steps.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Clinical Documentation</h3>
+                        <p>Applies language models to reduce manual note-taking and support healthcare workflows.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <button id="scrollTop" class="scroll-top" type="button" aria-label="Scroll to top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="../js/script.js" defer></script>
+</body>
+</html>
